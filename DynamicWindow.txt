@@ -1,0 +1,9 @@
+define subarray condition to be met for answer to be feasible
+
+left = 0,right = 0
+
+for(right = 0; right < n; right++):(slide right boundary)
+    update window with element at right pointer
+    while (subarray condition is violated):
+        remove element at left pointer from window, move left pointer to the right(slide left boundary)
+    record answer for subarry [left, left + 1, ..... right - 1, right]
