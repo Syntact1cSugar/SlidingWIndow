@@ -1,0 +1,22 @@
+Problem Identification : Given an array of size N, find computation on EVERY SUBARRAY OF FIXED SIZE K.
+
+Let the window be denoted by two pointers-endWindow and startWindow.
+Initial State : 
+startWindow = endWindow = 0
+Size of the window at any instant = endWindow - startWindow + 1
+
+while(endWindow < n)//Perform operation till the last window
+{
+  add arr[endWindow] to the current answer
+
+  //Window Size hit
+	if(endWindow - startWindow + 1 == k)
+	{
+		//Perform required computation on the required window [startWindow, startWindow + 1, ..., endWindow]
+    
+		//Remove the first entry from the current window before sliding
+    
+		startWindow++;
+	}
+  ++endWindow
+}
