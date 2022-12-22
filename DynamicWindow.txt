@@ -1,4 +1,7 @@
-define subarray condition to be met for answer to be feasible
+Problem Identification : Given an array of size N, find ALL/LONGEST SUBARRAY that meets certain CONDITION
+
+
+DEFINE : subarray condition to be met for answer to be feasible
 
 left = 0,right = 0
 
