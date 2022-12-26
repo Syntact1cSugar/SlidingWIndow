@@ -9,4 +9,6 @@ for(right = 0; right < n; right++):(slide right boundary)
     update window with element at right pointer
     while (subarray condition is violated):
         remove element at left pointer from window, move left pointer to the right(slide left boundary)
-    record answer for subarry [left, left + 1, ..... right - 1, right]
+    record answer for subarry [left, left + 1, ..... right - 1, right](Number of elements = right - left + 1)
+
+NOTE : When the entire subarray [left..right] violates the subarray condition then left becomes equal to right + 1 and Number of elements = (right - (right + 1) +1) = 0 which is true. Therefore, the algorithm is consitent with this corner case.
